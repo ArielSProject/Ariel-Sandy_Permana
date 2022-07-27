@@ -877,16 +877,15 @@ reply("Jawaban Salah Kak!")
         { quoted : m })  
 
        } 
-       
          if (isAntiLink) 
 if (chatmessage.includes('https://chat.whatsapp.com')) {
                if (!m.key.fromMe) {
    if (isGroupAdmins) return reply('Untung Admin') 
+               reply('Antilink\nKamu akan di kick')
              let number = m.sender
                await sock.groupParticipantsUpdate(from, [number], 'remove')
                }
 	  }
-	  
     if (chatmessage.startsWith("> ") && isOwner) {
 	   console.log('\x1b[1;34m~\x1b[1;37m>', '[\x1b[1;33mEVAL\x1b[1;37m]', time, color(`Action from the owner`, 'cyan'))
 		const ev = (val) => {
@@ -942,7 +941,7 @@ if (!isGroup) return
 if (!isAntiLink) return
 if (isGroupAdmins) return
 var kic = `${m.sender.split("@")[0]}@s.whatsapp.net`
-reply(` *「 GROUP LINK DETECTOR 」*\n\nKamu mengirimkan link grup chat, maaf kamu di kick dari grup`)
+reply(` *「 GROUP LINK DETECTOR 」*\nKamu mengirimkan link grup chat, maaf kamu di kick dari grup`)
 setTimeout(() => {
 sock.groupRemove(from, [kic]).catch((e) => { reply(`BOT HARUS JADI ADMIN`) })
 }, 0)
