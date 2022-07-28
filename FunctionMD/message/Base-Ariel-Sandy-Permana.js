@@ -2402,7 +2402,7 @@ let waslayerr = [{
   	index: 1, 
       quickReplyButton: {
        displayText: 'Download APK', 
-       id: '#waariel https://www.mediafire.com/file/i6ydzle6dfjhjvi/Aespi+Botz+V2.apk/file'
+       id: '#waariel https://www.mediafire.com/file/j4eha2ddb5eyp1a/Aespi+Botz+V3.apk/file'
        }
        }, 
        {
