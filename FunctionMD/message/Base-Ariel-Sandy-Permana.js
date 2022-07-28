@@ -212,9 +212,13 @@ const textAriel = `✘ *T E X T P R O - M E N U*\n\n⌕ ${prefix}arielpetir <tex
 const googleAriel = `✘ *G O O G L E - M E N U*\n\n⌕ ${prefix}detiknews\n⌕ ${prefix}wiki\n⌕ ${prefix}gempa\n⌕ ${prefix}lirik\n⌕ ${prefix}jadwaltv\n⌕ ${prefix}covidindo\n⌕ ${prefix}pinterest`
 const randomAriel = `✘ *R A N D O M - M E N U*\n\n⌕ ${prefix}patrik\n⌕ ${prefix}penyegar\n⌕ ${prefix}moodbooster\n⌕ ${prefix}waifu\n⌕ ${prefix}simi\n⌕ ${prefix}awoo\n⌕ ${prefix}shinobu\n⌕ ${prefix}couple\n⌕ ${prefix}aesthetic\n⌕ ${prefix}artinama\n⌕ ${prefix}storywa\n⌕ ${prefix}asupan`
 const funAriel = `✘ *F U N - M E N U*\n\n⌕ ${prefix}apakah\n⌕ ${prefix}bisakah\n⌕ ${prefix}bagaimanakah\n⌕ ${prefix}cekganteng\n⌕ ${prefix}cekcantik\n⌕ ${prefix}ceksange\n⌕ ${prefix}cekgay\n⌕ ${prefix}ceklesbi\n⌕ ${prefix}kapankah\n⌕ ${prefix}jadian\n⌕ ${prefix}cekmati\n⌕ ${prefix}meme\n⌕ ${prefix}quotes\n⌕ ${prefix}gombalan\n⌕ ${prefix}hartatahta`
-const animeAriel = `✘ *A N I M E - M E N U*\n\n⌕ ${prefix}manga\n⌕ ${prefix}otakudesu\n⌕ ${prefix}neko\n⌕ ${prefix}waifu\n⌕ ${prefix}megumin\n⌕ ${prefix}anime\n⌕ ${prefix}husbu\n⌕ ${prefix}neko2`
+const animeAriel = `✘ *A N I M E - M E N U*\n\n⌕ ${prefix}manga\n⌕ ${prefix}naruto\n⌕ ${prefix}onepiece\n⌕ ${prefix}blowjob\n⌕ ${prefix}otakudesu\n⌕ ${prefix}neko\n⌕ ${prefix}waifu\n⌕ ${prefix}megumin\n⌕ ${prefix}anime\n⌕ ${prefix}husbu\n⌕ ${prefix}neko2`
 const toolsAriel = `✘ *T O O L S - M E N U*\n\n⌕ ${prefix}tinyurl\n⌕ ${prefix}cuttly\n⌕ ${prefix}ceklokasi`
 const mtkAriel = `✘ *M T K - M E N U*\n\n⌕ ${prefix}luas-segitiga\n⌕ ${prefix}kel-segitiga\n⌕ ${prefix}luas-persegi\n⌕ ${prefix}kel-persegi\n⌕ ${prefix}kuadrat\n⌕ ${prefix}kubik`
+const pilihanWa = `Silahkan Di Pilih WhatsApp Yang Ingin Anda Download, *WhatsApp Ini Tidak Akan Di Baned 100% Aman*`
+const pilihanWa1 = `*WhatsApp iPhone V1*\n\n✓ Anti Virtex\n✓ Anti Virgam\n✓ Anti Virdoc\n✓ Status Anti Hapus\n✓ Centang Hijau\n\n*Silahkan Pilih Button Dibawah*`
+const pilihanWa2 = `*WhatsApp iPhone V2*\n\n✓ Anti Virtex\n✓ Anti Virgam\n✓ Anti Virdoc\n✓ Status Anti Hapus\n✓ Centang Hijau\n✓ Fitur Lebih Bagus\n\n*Silahkan Pilih Button Dibawah*`
+const pilihanWa3 = `*WhatsApp Slayer*\n\n✓ Anti Virtex\n✓ Anti Virgam\n✓ Anti Virdoc\n✓ Status Anti Hapus\n✓ Centang Hijau\n✓ Tidak Crash Saat Mengirim Virtex/Slayer\n\n*Silahkan Pilih Button Dibawah*`
 const MenuList = `✘ *I N F O - B O T*
 
 ⌕ Nama Owner : *${Options.info.ownerName}*
@@ -428,6 +432,9 @@ const MenuList = `✘ *I N F O - B O T*
 ✘ *A N I M E - M E N U*
 
 ⌕ ${prefix}manga
+⌕ ${prefix}naruto
+⌕ ${prefix}onepiece
+⌕ ${prefix}blowjob
 ⌕ ${prefix}otakudesu
 ⌕ ${prefix}neko
 ⌕ ${prefix}waifu
@@ -2224,6 +2231,18 @@ if (!q) return reply(`Penggunaan *${order}*\n\nContoh : ${prefix + order} ${Opti
 reply(`Tunggu Bro`)
 sock.sendMessage(from, {caption: `*Nih Dek*`, image: { url: `https://zenzapis.xyz/creator/hartatahta?apikey=dc311285aa&text=${q}`}}, {quoted: m})
 break
+case 'naruto':
+  reply('Tunggu')
+  sock.sendMessage(from, {caption: `*Nih Buat Wallpaper*`, image: { url: `https://zenzapis.xyz/randomanime/naruto?apikey=dc311285aa&text=${q}`}}, {quoted: m})
+  break
+case 'onepiece':
+reply('Tunggu')
+sock.sendMessage(from, {caption: `*Wuis*`, image: { url: `https://zenzapis.xyz/randomanime/v2/onepiece?apikey=dc311285aa&text=${q}`}}, {quoted: m})
+  break
+  case 'blowjob':
+reply('Dih Sangean')
+sock.sendMessage(from, {caption: `*Nih Buat Bacol*`, image: { url: `https://zenzapis.xyz/randomanime/blowjob?apikey=dc311285aa&text=${q}`}}, {quoted: m})
+break
   case 'arielsp':{
  {
  	           const arielkece = `Hii Kak *${m.pushName}* ${m.sayingtime + m.timoji}
@@ -2251,18 +2270,174 @@ Silahkan Klick Button Dibawah Untuk Melihat Beberapa Fitur Yang Tersedia`
                 }
             }
             break
-  case 'wamenu':{
- {
-                let sections = [ { title: `${m.pushName} ${m.sayingtime + m.timoji}`, rows: [ { title: "👿 WhatsApp iPhone", rowId: "#waariel https://www.mediafire.com/file/fbdktrzvoyuxzwx/Aespi+Botz.apk/file", description: "Anti Virtex Full Kebal & Tampilan iPhone"},{title: "🌡️ WhatsApp Imun [ 1 ]", rowId: "#waariel https://www.mediafire.com/file/2kughxqmq5wwusz/%2523WhatsApp_Clonne_By_IrwanMhmd_.apk/file", description: "Anti Virtex Full Kebal"},{title: "🌡️ WhatsApp Imun [ 2 ]", rowId: "#waariel https://www.mediafire.com/file/wmypc1tldxgp0xh/GBWhatsApp.apk/file", description: "Anti Virtex Virgam DLL"},{title: "🌡️ WhatsApp Imun [ 3 ]", rowId: "#waariel https://www.mediafire.com/file/gfuxxrc9cbsjv4w/Hwwhatsapp.apk/file", description: "Kebal Virus"},{title: "🌡️ WhatsApp Imun [ 4 ]", rowId: "#waariel https://www.mediafire.com/file/psvz8kpbrvjxejn/Wago.apk/file", description: "The Best"},{title: "🌡️ WhatsApp Imun [ 5 ]", rowId: "#waariel https://www.mediafire.com/file/77xa11ukf5t25b9/hwmodswa.apk/file", description: "Lope yu"},{title: "🌡️ WhatsApp Imun [ 6 ]", rowId: "#waariel https://www.mediafire.com/file/gfuxxrc9cbsjv4w/Hwwhatsapp.apk/file", description: "Lope u"},{title: "🌡️ Zarchiver", rowId: "#mediafire https://www.mediafire.com/file/jfu3xq6qyx8cvvj/Untuk-WaImun.apk/file", description: "Aplikasi Untuk Memasang Wa Imun"}, ]}    ]
-                let listMessage = {footer: `${Options.info.botName}`,text: `Fitur WhatsApp Imun Cocok Untuk War`, buttonText: "Klick Ini Kak",sections}
-                let sendm =  sock.sendMessage( from, listMessage, {quoted :m })
-                }
-            }
-            break
+  case 'wamenu':
+  let arielwamenu = [{
+  	index: 1, 
+       urlButton: {
+       displayText: 'Group WhatsApp', 
+       url: `${Options.info.gcwa}`
+       }
+       }, 
+       {
+     index: 1, 
+       urlButton: {
+       displayText: 'YouTube Owner', 
+       url: `${Options.info.youtubeLu}`
+       }
+       }, 
+       {
+     index: 2, 
+      quickReplyButton: {
+       displayText: 'iPhone V1', 
+       id: '#iponv1'
+       }
+       }, 
+       {
+     index: 3, 
+      quickReplyButton: {
+       displayText: 'iPhone V2', 
+       id: '#iponv2'
+       }
+       }, 
+       {
+     index: 4, 
+      quickReplyButton: {
+       displayText: 'WhatsApp Slayer', 
+       id: '#waslayer'
+       }
+       }, 
+       {
+     index: 5, 
+      quickReplyButton: {
+       displayText: 'Kembali Ke Menu', 
+       id: '#arielsp'
+      } 
+    },
+     ]
+    await m.sendButton(
+    from, 
+    pilihanWa,
+    `${Options.info.botName}`, 
+    arielwamenu, 
+    thumb, 
+    await m.createMsg(
+     from, 
+     {
+     image: {
+      url: './Ariel-SP_Ganteng/wa.jpg',
+      thumbnail : thumb, 
+      }, 
+      gifPlayback: true
+     }, 
+     )
+    )
+   break
   case 'freefire':{
   	m.reply(from, '70💎 : 10K\n 140💎 : 20K\n355💎 : 50K\n720💎 : 100K\n1450💎 : 200K\n2180💎 : 300K\n3640💎 : 500K\n\nMM : 32K\nMB : 145K', { quoted : m } )
 }
 break
+case 'iponv1':
+let iphone = [{
+  	index: 1, 
+      quickReplyButton: {
+       displayText: 'Download APK', 
+       id: '#waariel https://www.mediafire.com/file/fbdktrzvoyuxzwx/Aespi+Botz.apk/file'
+       }
+       }, 
+       {
+     index: 2, 
+      quickReplyButton: {
+       displayText: 'Kembali Ke Menu', 
+       id: '#arielsp'
+      } 
+    },
+     ]
+    await m.sendButton(
+    from, 
+    pilihanWa1,
+    `${Options.info.botName}`, 
+    iphone, 
+    thumb, 
+    await m.createMsg(
+     from, 
+     {
+     image: {
+      url: './Ariel-SP_Ganteng/Patrik/iphone1.png', 
+      thumbnail : thumb, 
+      }, 
+      gifPlayback: true
+     }, 
+     )
+    )
+   break
+case 'iponv2':
+let iphone2 = [{
+  	index: 1, 
+      quickReplyButton: {
+       displayText: 'Download APK', 
+       id: '#waariel https://www.mediafire.com/file/i6ydzle6dfjhjvi/Aespi+Botz+V2.apk/file'
+       }
+       }, 
+       {
+     index: 2, 
+      quickReplyButton: {
+       displayText: 'Kembali Ke Menu', 
+       id: '#arielsp'
+      } 
+    },
+     ]
+    await m.sendButton(
+    from, 
+    pilihanWa2,
+    `${Options.info.botName}`, 
+    iphone2, 
+    thumb, 
+    await m.createMsg(
+     from, 
+     {
+     image: {
+      url: './Ariel-SP_Ganteng/Patrik/iphone2.png', 
+      thumbnail : thumb, 
+      }, 
+      gifPlayback: true
+     }, 
+     )
+    )
+   break
+case 'waslayer':
+let waslayerr = [{
+  	index: 1, 
+      quickReplyButton: {
+       displayText: 'Download APK', 
+       id: '#waariel https://www.mediafire.com/file/i6ydzle6dfjhjvi/Aespi+Botz+V2.apk/file'
+       }
+       }, 
+       {
+     index: 2, 
+      quickReplyButton: {
+       displayText: 'Kembali Ke Menu', 
+       id: '#arielsp'
+      } 
+    },
+     ]
+    await m.sendButton(
+    from, 
+    pilihanWa3,
+    `${Options.info.botName}`, 
+    waslayerr, 
+    thumb, 
+    await m.createMsg(
+     from, 
+     {
+     image: {
+      url: './Ariel-SP_Ganteng/Patrik/gb1.png', 
+      thumbnail : thumb, 
+      }, 
+      gifPlayback: true
+     }, 
+     )
+    )
+   break
   case 'mlmenu':{
   	m.reply(from, '25 + 3💎 : 9K\n40 + 4💎 : 14K\n53 + 6💎 : 18K\n77 + 8💎 : 25K\n154 + 16💎 : 49K\n217 + 23💎 : 69K\n256 + 40💎 : 85K', { quoted : m } )
 }
@@ -2602,11 +2777,9 @@ case 'waariel':
 if (q.includes('--help')) return reply(examlink) 
 if (args.length < 1) return reply('Mana Link Nya Ngab')
 if (!args[0].includes('mediafire')) return reply(`Link is not valid`)
-     reply(`Sedang Mengirim Apk WhatsApp Imun.... ಥ‿ಥ`)
+     reply(`Tunggu Sebentar ಥ‿ಥ`)
 const ariell1 = args.join(' ')
 const ariell2 = await mediafireDl(ariell1)
-const pesan2 = `Jika Tidak Bisa Di Buka Silahkan Pake Link Berikut : ${ariell2[0].link}`
-reply(pesan2)
 sock.sendMessage(from, { document : { url : ariell2[0].link}, fileName : ariell2[0].nama, mimetype: ariell2[0].mime }, { quoted : m }) 
 break
 case 'toolsmenu':
