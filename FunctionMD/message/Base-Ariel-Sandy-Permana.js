@@ -2304,13 +2304,6 @@ Silahkan Klick Button Dibawah Untuk Melihat Beberapa Fitur Yang Tersedia`
       quickReplyButton: {
        displayText: 'WhatsApp Slayer', 
        id: '#waslayer'
-       }
-       }, 
-       {
-     index: 5, 
-      quickReplyButton: {
-       displayText: 'Kembali Ke Menu', 
-       id: '#arielsp'
       } 
     },
      ]
